@@ -39,6 +39,4 @@ public class WoodSpawner : MatSpawner
     {
         InvokeRepeating("spawnWood", 0, 1);
     }
-
-
 }

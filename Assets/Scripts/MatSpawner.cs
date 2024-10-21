@@ -27,7 +27,7 @@ public class MatSpawner : MonoBehaviour
     }
     public void Interact()
     {
-        if (GameMaterials.GetMaterialAmount() >= 3 || state == spawnerState.Fixed)
+        if (GameMaterials.GetMaterialAmount() >= 3 && state != spawnerState.Fixed)
         {
             GameMaterials.DeductResource(3);
             Debug.Log("Spawner Fixed");
