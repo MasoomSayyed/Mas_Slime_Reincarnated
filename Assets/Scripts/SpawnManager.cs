@@ -19,7 +19,7 @@ public class SpawnManager : MonoBehaviour
     private float maxX = 18f;
     private float minZ = -40f;
     private float maxZ = -10f;
-    private float posY = 2.5f;
+    private float posY = 0f;
     private int currentEnemies = 0;
 
 

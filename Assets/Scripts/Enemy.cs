@@ -39,7 +39,7 @@ public class Enemy : MonoBehaviour
 
             if (Vector3.Distance(transform.position, targetPosition) < 1f)
             {
-                targetPosition = new Vector3(GetRoamingPosition().x, 2.5f, GetRoamingPosition().z);
+                targetPosition = new Vector3(GetRoamingPosition().x, 0f, GetRoamingPosition().z);
             }
             transform.position = Vector3.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
         }
